@@ -10,6 +10,7 @@ patches:
       namespace: podinfo
 configMapGenerator:
   - name: netshoot-values
+    namespace: netshoot
     files:
       - values.yaml=netshoot-values.yaml
 configurations:
