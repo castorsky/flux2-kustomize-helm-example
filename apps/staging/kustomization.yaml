@@ -8,3 +8,9 @@ patches:
     target:
       kind: HelmRelease
       namespace: podinfo
+configMapGenerator:
+  - name: netshoot-values
+    files:
+      - values.yaml=netshoot-values.yaml
+configurations:
+  - kustomizeconfig.yaml

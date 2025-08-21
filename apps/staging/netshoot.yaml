@@ -19,5 +19,6 @@ spec:
         name: flux-system
         namespace: flux-system
       interval: 12h
-  values:
-    replicaCount: 1
+  valuesFrom:
+    - kind: ConfigMap
+      name: netshoot-values
